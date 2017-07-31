@@ -11,7 +11,9 @@ import { ROUTES } from './app.routes';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { DisplayResumeComponent } from './display-resume/display-resume.component';
 import { AppProgressBarService } from './app.progressbar.service';
-import { Chart,ChartModule } from 'angular-highcharts';
+import { Chart, ChartModule } from 'angular-highcharts';
+import { MyProjectsComponent } from './my-projects/my-projects.component';
+import { MyInterestsComponent } from './my-interests/my-interests.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { Chart,ChartModule } from 'angular-highcharts';
     HeaderComponentComponent,
     HomePageComponent,
     ContactMeComponent,
-    DisplayResumeComponent
+    DisplayResumeComponent,
+    MyProjectsComponent,
+    MyInterestsComponent
   ],
   imports: [
     BrowserModule,
