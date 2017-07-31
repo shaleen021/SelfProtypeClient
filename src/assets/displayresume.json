@@ -1,0 +1,118 @@
+{
+    "msg": "RESULT FOUND",
+    "statusCd": 200,
+    "results":  [
+        {
+            "description":"Young, energetic and result oriented professional with strong academic background and experience of more than 3 years in IT industry. Deep understanding of technology with focus on delivering business solutions, Adept at analyzing organization requirements, Highly ethical trustworthy and discreet.",
+            "name":"Shaleen Agarwal",
+            "designation":"System Developer",
+            "dob":"21-Feb-1994",
+            "address1":"503, La Bella Maison",
+            "address2":"Green Glen Layout",
+            "street":"Bellandur",
+            "city":"Bengaluru",
+            "pin":"243001",
+            "languagesknow":"English, Hindi",
+            "workExperience": [
+                {
+                    "companyName": "Tata Consultancy Services",
+                    "designation":"System Engineer",
+                    "fromDate": "13-Oct-2014",
+                    "endDate":"24-Apr-2017",
+                    "currCompInd":"0",
+                    "description":"I started my carrer from TCS Chennai in Oct 2014 as a Assistant System Engineer - Trainee. I completed my initial learning program from there in Jan 2015 and after that started working for client. My job was to develop complete system based on the client requirement and expectations. While developing these solutions i enhanced my skills viz Java/J2EE, Spring, IBM websphere, Weblogic, Spring, Hibernate, Mozenda"
+                },
+                {
+                    "companyName": "Deloitte (Offices of US)",
+                    "designation":"Business Technology Analyst",
+                    "fromDate": "13-Oct-2014",
+                    "endDate":"",
+                    "currCompInd":"1",
+                    "description":"I started my carrer from TCS Chennai in Oct 2014 as a Assistant System Engineer - Trainee. I completed my initial learning program from there in Jan 2015 and after that started working for client. My job was to develop complete system based on the client requirement and expectations. While developing these solutions i enhanced my skills viz Java/J2EE, Spring, IBM websphere, Weblogic, Spring, Hibernate, Mozenda"
+                }
+            ],
+            "skills": [
+                {
+                    "skillName":"Java/J2EE",
+                    "proficiency":10
+                },
+                {
+                    "skillName":"Angular",
+                    "proficiency":6
+                },
+                {
+                    "skillName":"Spring",
+                    "proficiency":8
+                },
+                {
+                    "skillName":"Hibernate",
+                    "proficiency":7
+                },
+                {
+                    "skillName":"Oracle",
+                    "proficiency":9
+                },
+                {
+                    "skillName":"WebServices",
+                    "proficiency":8
+                },  {
+                    "skillName":"Github",
+                    "proficiency":9
+                },  {
+                    "skillName":"Jenkins",
+                    "proficiency":7
+                }
+            ],
+            "projects": [
+                {
+                    "projectName":"IBM Websphere Portal",
+                    "fromDate":"01-Oct-2015",
+                    "endDate":"31-Jul-2016",
+                    "skillsUsed":"Java/J2EE, IBM Websphere Portal"
+                },
+                {
+                    "projectName":"Airtel Payment System",
+                    "fromDate":"01-Aug-2016",
+                    "endDate":"24-Apr-2017",
+                    "skillsUsed":"Java/J2EE, IBM Websphere Portal"
+                },
+                {
+                    "projectName":"Gordon Food Services",
+                    "fromDate":"02-May-2017",
+                    "endDate":"",
+                    "skillsUsed":"Java/J2EE, IBM Websphere Portal"
+                }
+            ],
+            "education": [
+                {
+                    "courseName":"Bachelor of Technology",
+                    "instituteName":"SRMS College of Engg & Tech.",
+                    "fromDate":"May-2010",
+                    "endDate":"Jun-2014",
+                    "percentage":"72.36"
+                },
+                {
+                    "courseName":"Intermediate",
+                    "instituteName":"GRM School, Bareilly (C.B.S.E.)",
+                    "fromDate":"Apr-2009",
+                    "endDate":"Mar-2010",
+                    "percentage":"84"
+                },
+                {
+                    "courseName":"SSC",
+                    "instituteName":"RMP School, Bareilly (C.B.S.E)",
+                    "fromDate":"Apr-2007",
+                    "endDate":"Mar-2008",
+                    "percentage":"84.6"
+                }
+            ],
+            "awards":[
+                {
+                    "awardName":"Star Performer Award",
+                    "organization":"Tata Consultancy Services"
+                }
+                
+            ]
+        }
+    ]
+}

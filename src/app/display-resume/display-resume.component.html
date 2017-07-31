@@ -1,0 +1,200 @@
+<div class="row" style="background-color:#808080;">
+	<div class="col-md-3 col-md-offset-5">
+		<h1 style="font-weight:bold;">Resume</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-10 col-md-offset-1">
+		<h4 style="text-align: center;">
+      {{data?.description}}
+		</h4>
+	</div>
+</div>
+<div class="row" style="min-height:25px;">
+  <div class="col-md-12"></div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-6">
+      <div class="row thumbnail">
+          <div class="col-md-4">
+            <img src="assets/images/dp.jpg" style="min-height:300px;min-width:250px;" alt="Shaleen Agarwal">
+          </div>
+          <div class="col-md-8">
+            <div class="caption">
+                <h1>{{data?.name}}</h1>
+                <h4>{{data?.designation}}</h4>
+                <h4>{{data?.address1}},</h4>
+                <h4>{{data?.address2}}, {{data?.street}},</h4>
+                <h4>{{data?.city}}. Pin: {{data?.pin}}</h4>
+                <h5>Date of Birth : {{data?.dob}}</h5>
+                <h5>Languages Known: {{data?.languagesknow}}</h5>
+            </div>
+          </div>
+      </div>
+    </div>
+  <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-2">
+          <div class='square-box' style="width: 50px; height: 50px;">
+          <div class='square-content'>
+            <div>
+              <span>Skills</span>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <div class="col-md-10">
+        <div [chart]="chart"></div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
+     <div class='square-box' style="width: 90px; height: 90px;">
+          <div class='square-content' style="top:28px;">
+            <div>
+              <span>Work Experience</span>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12" style="min-height:20px;"></div>
+</div>
+ <div class="row" *ngFor="let workExp of data?.workExperience">
+          <div class="col-md-3"></div>
+          <div class="col-md-2 thumbnail" style="background-color:#d6d6c2">
+           <div class="row">
+            <div class="col-md-12">
+            <h3 style="color:#01B1AF;">
+              <div *ngIf="workExp?.currCompInd == 0">
+              {{workExp?.fromDate}}  -<br> {{workExp?.endDate}}
+              </div>
+              <div *ngIf="workExp?.currCompInd != 0">
+              {{workExp?.fromDate}} -<br> Present
+              </div>
+            </h3>
+            <h4>
+               {{workExp?.designation}}
+            </h4>
+             <h4>
+               {{workExp?.companyName}}
+            </h4>
+             </div>
+           </div>
+          </div>
+          <div class="col-md-4 thumbnail" style="background-color:#d6d6c2">
+            <div class="caption">
+                <h4 style="font-style:bold">Job Description</h4>
+                <h5 style="font-style:italic">{{workExp?.description}}</h5>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
+     <div class='square-box' style="width: 80px; height: 80px;">
+          <div class='square-content' style="top:28px;">
+            <div>
+              <span>Education</span>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div col-md-12>
+    <div class="container">
+  <ul class="timeline">
+    <li><div class="tldate">{{data?.education[0].endDate}}</div></li>
+    <div *ngFor="let education of data?.education;let index = index">
+      <div class="tl-circ"></div>
+      <li *ngIf="index%2==0">
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h2>{{education.courseName}}</h2>
+        </div>
+        <div class="tl-body">
+          <h4>{{education.instituteName}}</h4>
+          <h5>Marks: {{education.percentage}}</h5>
+          <p>From: {{education.fromDate}}</p>
+          <p>To: {{education.endDate}}</p>
+      </div>
+      </div>
+      </li>
+      <li class="timeline-inverted" *ngIf="index%2!=0">
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h2>{{education.courseName}}</h2>
+        </div>
+        <div class="tl-body">
+          <h4>{{education.instituteName}}</h4>
+          <h5>Marks: {{education.percentage}}</h5>
+          <p>From: {{education.fromDate}}</p>
+          <p>To: {{education.endDate}}</p>
+      </div>
+      </div>
+      </li>
+    </div>
+    <li><div class="tldate">{{data?.education[data?.education.length-1].fromDate}}</div></li>
+  </ul>
+  </div>
+</div>
+<div class="row" style="min-height:25px;">
+  <div class="col-md-12"></div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
+     <div class='square-box' style="width: 80px; height: 80px;">
+          <div class='square-content' style="top:28px;left:15px;">
+            <div>
+              <span>Awards</span>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+ <div class="row" *ngFor="let award of data?.awards">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 thumbnail" style="background-color:#d6d6c2">
+           <div class="row">
+             <div class="col-md-4"></div>
+             <div class="col-md-1">
+               <i class="fa fa-trophy fa-5x" aria-hidden="true"></i>
+             </div>
+            <div class="col-md-3">
+                <div class="caption">
+                <h4 style="font-style:bold">{{award?.awardName}}</h4>
+                <h5 style="font-style:italic">{{award?.organization}}</h5>
+                </div>
+             </div>
+             <div class="col-md-4"></div>
+           </div>
+          </div>
+          <div class="col-md-3"></div>
+</div>
+<div class="row" style="min-height:25px;">
+  <div class="col-md-12"></div>
+</div>
+<div class="row" style="min-height:25px;">
+  <div class="col-md-5"></div>
+    <div class="col-md-2">
+      <a class="btn btn-info btn-block" href="#">Download Full Resume</a>
+    </div>
+  <div class="col-md-5"></div>
+</div>
+<div class="row" style="min-height:25px;">
+  <div class="col-md-12"></div>
+</div>

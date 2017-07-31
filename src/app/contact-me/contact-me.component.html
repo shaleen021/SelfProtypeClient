@@ -1,0 +1,64 @@
+<div class="row">
+	<div class="col-md-3 col-md-offset-5">
+		<h1>I am here to Help !</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<h3 style="font-style:italic;">
+			I am friendly and available to your help. Reach out to me anytime and I will 
+			happily answer your Queries.
+		</h3>
+	</div>
+</div>
+<div class="row" style="background-color:#e0e0d1;">
+ <div class="col-md-8 col-md-offset-2">
+	 <form class="well collapse in" [formGroup]="contactMeForm">
+		   <div class="row">
+				<div class="col-md-12">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input class="form-control" formControlName="name">
+					<span class="text-danger show" *ngIf="contactMeForm.controls.name.errors">Enter Name</span>
+				</div>
+				</div>
+    		</div>
+			 <div class="row">
+				<div class="col-md-12">
+				<div class="form-group">
+					<label for="name">Subject</label>
+					<input class="form-control" formControlName="subject">
+					<span class="text-danger show" *ngIf="contactMeForm.controls.subject.errors">Enter Subject</span>
+				</div>
+				</div>
+    		</div>
+			 <div class="row">
+				<div class="col-md-12">
+				<div class="form-group">
+					<label for="name">Email</label>
+					<input class="form-control" formControlName="email">
+					<span class="text-danger show" *ngIf="contactMeForm.controls.email.errors?.email">Enter Valid Email</span>
+				</div>
+				</div>
+    		</div>
+			 <div class="row">
+				<div class="col-md-12">
+				<div class="form-group">
+					<label for="name">Message</label>
+					<textarea class="form-control" formControlName="message" rows="6"></textarea>
+					<span class="text-danger show" *ngIf="contactMeForm.controls.message.errors?.required">Enter Message</span>
+					<span class="text-danger show" *ngIf="contactMeForm.controls.message.errors?.minlength">Minimum Length is 30 Characters</span>
+				</div>
+				</div>
+    		</div>
+			<div class="row">
+				<div class="col-md-12">
+				<div class="pull-right">
+					<button type="button" class="btn btn-secondary" (click)="clearForm()">Reset</button>
+					<button type="button" class="btn btn-primary" [disabled]="!contactMeForm.valid" (click)="onSubmit(contactMeForm)">SEND MESSAGE</button>
+				</div>
+				</div>
+  			</div>
+	 </form>
+ </div>
+ </div>

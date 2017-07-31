@@ -1,22 +1,31 @@
 .round-button-circle {
-	
-width:150px;
-height:150px;
-	padding-bottom: 100%;
+	align-content: center;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+	text-align: center;
     border-radius: 50%;
 	background: #01B1AF;
     overflow:hidden;
+	width:160px;
+	height:160px;
 }
-.round-button {
 
-	float:right;
-	width:14%;
-}
 
 .img-circle{
 	border:10px solid #cfdcec;
     overflow:hidden;
-	 border-radius: 50%;
-	 width:225px;
-	 height:225px;
-	}
+	border-radius: 50%;
+	width:200px;
+	height:200px;
+}
+
+.round-button {
+	margin-left:20%;
+	margin-top:66px;
+}
+.homeContent{
+	color:#595959; 
+	font-style:italic;
+}
